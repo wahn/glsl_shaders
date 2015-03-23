@@ -1,0 +1,26 @@
+<ShaderNodePreset SupportsAdaptiveDegradation="0" LimitInputsToTexture="True" Version="1" Description="" Name="Preset Name">
+   <Shader OutputBitDepth="Output" Index="1">
+      <Uniform ResDependent="None" Max="100.0" Min="1.0" Default="30.0" Inc="1.0" Tooltip="" Row="0" Col="0" Page="0" DisplayName="Noise Level" Type="float" Name="g_NoiseLevel">
+      </Uniform>
+      <Uniform ResDependent="None" Max="100.0" Min="0.0" Default="79.0" Inc="1.0" Tooltip="" Row="1" Col="0" Page="0" DisplayName="Lerp Coefficient" Type="float" Name="g_LerpCoefficient">
+      </Uniform>
+      <Uniform ResDependent="None" Max="100.0" Min="0.0" Default="2.0" Inc="1.0" Tooltip="" Row="2" Col="0" Page="0" DisplayName="Weight Threshold" Type="float" Name="g_WeightThreshold">
+      </Uniform>
+      <Uniform ResDependent="None" Max="100.0" Min="0.0" Default="75.0" Inc="1.0" Tooltip="" Row="3" Col="0" Page="0" DisplayName="Counter Threshold" Type="float" Name="g_CounterThreshold">
+      </Uniform>
+      <Uniform ResDependent="None" Max="100.0" Min="1.0" Default="49.0" Inc="1.0" Tooltip="" Row="0" Col="1" Page="0" DisplayName="Gaussian Sigma" Type="float" Name="g_GaussianSigma">
+      </Uniform>
+      <Uniform ResDependent="None" Max="10.0" Min="1.0" Default="3.0" Inc="1.0" Tooltip="" Row="1" Col="1" Page="0" DisplayName="Window Radius" Type="float" Name="g_WindowRadius">
+      </Uniform>
+      <Uniform Index="0" NoInput="Error" Tooltip="" DisplayName="input1" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_REPEAT" GL_TEXTURE_WRAP_S="GL_REPEAT" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="input1">
+      </Uniform>
+      <Uniform Row="3" Col="1" Page="0" Default="False" Tooltip="" DisplayName="Show Edges" Type="bool" Name="g_ShowEdges">
+      </Uniform>
+   </Shader>
+   <Page Name="Page 1" Page="0">
+      <Col Name="remove noise" Col="0" Page="0">
+      </Col>
+      <Col Name="restore detail" Col="1" Page="0">
+      </Col>
+   </Page>
+</ShaderNodePreset>
